@@ -1,45 +1,34 @@
 <?php
+/**
+ * inkludovani interfaceu
+ */
+include 'class/iustrednyBooij.php'; 
+/**
+ * inkludovani abstraktni tridy
+ */
+include 'class/ustrednyBooij.php';  
+/**
+ * inkludovani dedici tridy
+ */
+include 'class/ustrednaBooij.php'; 
 
-declare (strict_types=1);
-
-require 'class/StringsJeffreyBooij.php';
-
-$string="tomasCanSuckMyDick\ whatadick ";
-
-var_dump(StringsJeffreyBooij::substrJeffreyBooij($string));
-
-var_dump(StringsJeffreyBooij::substr_replaceJeffreyBooij($string));
-
-var_dump(StringsJeffreyBooij::strtrJeffreyBooij($string));
-
-var_dump(StringsJeffreyBooij::strtoupperJeffreyBooij($string));
-
-var_dump(StringsJeffreyBooij::strtolowerJeffreyBooij($string));
-
-var_dump(StringsJeffreyBooij::strrposJeffreyBooij($string));
-
-var_dump(StringsJeffreyBooij::strriposJeffreyBooij($string));
-
-var_dump(StringsJeffreyBooij::strposJeffreyBooij($string));
-
-var_dump(StringsJeffreyBooij::strlenJeffreyBooij($string));
-
-var_dump(StringsJeffreyBooij::strchrJeffreyBooij($string));
-
-var_dump(StringsJeffreyBooij::str_replaceJeffreyBooij($string));
-
-var_dump(StringsJeffreyBooij::md5JeffreyBooij($string));
-
-var_dump(StringsJeffreyBooij::implodeJeffreyBooij($string));
-
-var_dump(StringsJeffreyBooij::explodeJeffreyBooij($string));
-
-var_dump(StringsJeffreyBooij::addcslashesJeffreyBooij($string));
-
-var_dump(StringsJeffreyBooij::addslashesJeffreyBooij($string));
-
-var_dump(StringsJeffreyBooij::trimJeffreyBooij($string));
-
-var_dump(StringsJeffreyBooij::ucfirstJeffreyBooij($string));
-
-var_dump(StringsJeffreyBooij::ucwordsJeffreyBooij($string));
+/**
+ * atribut podle ktereho nastavime napeti
+ */
+$napetiBooij = 24; 
+/**
+ * instance tridy ustrednaBooij
+ */
+$newBooij = new ustrednaBooij(); 
+/**
+ * vypsani ve var dump constanty TYPE
+ */
+var_dump($newBooij::TYPE); 
+/**
+ * nastaveni atributu pomoci instacniho pristupu k fuknci
+ */
+$newBooij->setNapetiBooij($napetiBooij);      
+/**
+ * vypsani atributu ve var dump instancnim zpusobem
+ */
+var_dump($newBooij->getNapetiBooij());
