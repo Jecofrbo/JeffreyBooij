@@ -1,3 +1,4 @@
+
 <?php
 /**
  * inkludovani interfaceu
@@ -15,7 +16,7 @@ include 'class/ustrednaBooij.php';
 /**
  * atribut podle ktereho nastavime napeti
  */
-$napetiBooij = 24; 
+$napetiBooij = 25; 
 /**
  * instance tridy ustrednaBooij
  */

@@ -1,3 +1,4 @@
+
 <?php
 
 /**
@@ -6,13 +7,14 @@
 interface iustrednyBooij {
     /**
      * funkce ktera se musi implementovat
+     * @return int
      */
-    function getNapetiBooij(); 
+    function getNapetiBooij() : int; 
     /**
      * funkce ktera se musi implementovat
-     * @param type $napetiBooij
+     * @param int $napetiBooij
      */
-    function setNapetiBooij($napetiBooij); 
+    function setNapetiBooij(int $napetiBooij) ; 
 }
 
 

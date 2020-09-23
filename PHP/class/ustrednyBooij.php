@@ -14,19 +14,19 @@ abstract class ustrednyBooij implements iustrednyBooij{
   
   /**
    *funkce pro ziskani hodnoty atributu implementovana z interfacu
-   * @return type
+   * @return int
    */
   
-    function getNapetiBooij() {
+    function getNapetiBooij() : int {
       return $this->napetiBooij;
   }
 
   /**
    * fuknce ktera nastavi hodnotu atributu implementovana z interfacu
-   * @param type $napetiBooij
+   * @param int $napetiBooij
    */
    
-  function setNapetiBooij($napetiBooij) {
+  function setNapetiBooij(int $napetiBooij) {
       $this->napetiBooij = $napetiBooij;
   }
 

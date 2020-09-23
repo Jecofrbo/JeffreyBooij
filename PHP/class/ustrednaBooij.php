@@ -1,3 +1,4 @@
+
 <?php
 
 /**
@@ -12,17 +13,17 @@ class ustrednaBooij extends ustrednyBooij{
    
     /**
      * funkce pro ziskani hodnoty atributu
-     * @return type
+     * @return int
      */
-    public function getNapetiBooij() {
+    public function getNapetiBooij() : int{
       return $this->napetiBooij;
   }
   
 /**
  * fuknce ktera nastavi hodnotu atributu
- * @param type $napetiBooij
+ * @param int $napetiBooij
  */
-   public function setNapetiBooij($napetiBooij) {
+   public function setNapetiBooij(int $napetiBooij)  {
       $this->napetiBooij = $napetiBooij;
   }
 }
