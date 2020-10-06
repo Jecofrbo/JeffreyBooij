@@ -9,11 +9,11 @@ $user = new user;
 $user->setRyanJeffreyBooij($ryan);
 $user->setGumpJeffreyBooij($gump);
 
-echo $user->getPpJeffreyBooij();
-echo $user->getSmallppJeffreyBooij();
-echo $user->getBigppJeffreyBooij();
-echo $user->getAverageppJeffreyBooij();
-echo $user->getMicroppJeffreyBooij();
+echo $user->getPpJeffreyBooij()."<br>"; 
+echo $user->getSmallppJeffreyBooij()."<br>";
+echo $user->getBigppJeffreyBooij()."<br>";
+echo $user->getAverageppJeffreyBooij()."<br>";
+echo $user->getMicroppJeffreyBooij()."<br>";
  
 var_dump($user);
 
