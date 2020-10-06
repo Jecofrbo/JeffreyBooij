@@ -1,8 +1,9 @@
 <?php
 
+declare(strict_types=1);
 
 class User {
-    
+
     public $pp = "7 inches";
     public $bigpp = "8 inches";
     public $smallpp = "4 inches";
@@ -13,30 +14,76 @@ class User {
     protected $averagebanana;
     private $ryan;
     private $gump;
-    
+
+    /*
+     * Konstruktor bezi po instancovani
+     */
+
     public function __construct() {
-    
+        
     }
-    
-    public function setRyanJeffreyBooij ($ryan) {
-    $this->ryan=$ryan;
+
+    /*
+     * nastavi $ryan
+     * @param int $ryan
+     */
+
+    public function setRyanJeffreyBooij(int $ryan) {
+        $this->ryan = $ryan;
     }
-    public function setGumpJeffreyBooij ($gump) {
-    $this->gump=$gump;
+
+    /*
+     * nastavi $gump
+     * @param int $gump
+     */
+
+    public function setGumpJeffreyBooij(int $gump) {
+        $this->gump = $gump;
     }
-    public function getPpJeffreyBooij () {
-    return $this->pp;
+
+    /*
+     * ziska hodnotu
+     * @return string
+     */
+
+    public function getPpJeffreyBooij(): string {
+        return $this->pp;
     }
-    public function getBigppJeffreyBooij () {
-    return $this->bigpp;
+
+    /*
+     * ziska hodnotu
+     * @return string
+     */
+
+    public function getBigppJeffreyBooij(): string {
+        return $this->bigpp;
     }
-    public function getSmallppJeffreyBooij () {
-    return $this->smallpp;
+
+    /*
+     * ziska hodnotu
+     * @return string
+     */
+
+    public function getSmallppJeffreyBooij(): string {
+        return $this->smallpp;
     }
-    public function getAverageppJeffreyBooij () {
-    return $this->averagepp;
+
+    /*
+     * ziska hodnotu
+     * @return string
+     */
+
+    public function getAverageppJeffreyBooij(): string {
+        return $this->averagepp;
     }
-    public function getMicroppJeffreyBooij () {
-    return $this->micropp;
+
+    /*
+     * ziska hodnotu
+     * @return string
+     */
+
+    public function getMicroppJeffreyBooij(): string {
+        return $this->micropp;
     }
+
 }
